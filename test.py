@@ -158,7 +158,7 @@ def llm_move(board: chess.Board, model: str):
 
         try:
             text = resp["message"]["content"]
-        except (TypeError, KeyError):
+        except (TypeError, KeyErㅃror):
             text = resp.message.content
 
         move, error = parse_move(text, board, legal_sans)
